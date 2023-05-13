@@ -16,3 +16,4 @@ const promptSchema = new Schema({
 })
 
 const Prompt = models.Prompt || model("Prompt", promptSchema);
+export default Prompt;

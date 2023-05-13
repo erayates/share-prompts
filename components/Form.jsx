@@ -19,11 +19,12 @@ const Form = ({
       <form
         className='mt-10 w-full max-w-2xl flex flex-col gap-7 glassmorphism'
         onSubmit={handleSubmit}
+        method='POST'
       >
         <label>
           <span className='font-satoshi font-semibold text-base text-gray-700'>Your AI Prompt</span>
           <textarea 
-            value={prompt} 
+            value={post.prompt} 
             onChange={(e) => setPost({...post, prompt: e.target.value})} 
             placeholder='Write your prompt here....'
             className='form_textarea' 
@@ -40,10 +41,10 @@ const Form = ({
           </span>
           <input 
             value={post.tag} 
-            onChange={(e) => setPost({...post, prompt: e.target.value})} 
+            onChange={(e) => setPost({...post, tag: e.target.value})} 
             placeholder='#tag'
             required
-            className='form_textarea' 
+            className='form_input' 
           />
         </label>
 
