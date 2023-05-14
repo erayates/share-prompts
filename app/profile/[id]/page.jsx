@@ -21,7 +21,7 @@ const UserProfile = () => {
             const data = await response.json();
             setPosts(data);
             setName(searchParams.get('name'))
-            setDesc(`Welcome to ${name}'s profile page.`)
+            setDesc(`Welcome to ${name}'s personalized profile page. Explore ${name}'s prompts and be inspired by the power of imagination.`)
             
             
         }
