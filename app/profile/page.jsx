@@ -19,7 +19,7 @@ const MyProfile = () => {
             const data = await response.json();
             setPosts(data);
         }
-        if(session?.user.id) fetchPosts()
+        session?.user.id ? fetchPosts() : router.push('/');
     }, [])
 
     const handleEdit = (post) => {
