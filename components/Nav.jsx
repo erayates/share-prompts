@@ -76,7 +76,7 @@ const Nav = () => {
                         alt="Profile" 
                         width={40} 
                         height={40} 
-                        className='object-contain rounded-full'
+                        className='object-contain rounded-full cursor-pointer'
                         onClick={() => setToggleDropdown((prev) => !prev)}    
                     />
                     {toggleDropdown && (
@@ -89,7 +89,7 @@ const Nav = () => {
                                 My Profile
                             </Link>
                             <Link
-                                href='/profile'
+                                href='/create-prompt'
                                 className='dropdown_link'
                                 onClick={() => setToggleDropdown(false)}
                             >
