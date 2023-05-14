@@ -29,6 +29,7 @@ const PromptCard = ({ post, handleTagClick, handleEdit, handleDelete }) => {
             width={40}
             height={40}
             className='rounded-full object-contain'
+            onClick={() => router.push(`/profile/${post.creator._id}?name=${post.creator.username}`)}
           />
 
           <div className='flex flex-col'>
