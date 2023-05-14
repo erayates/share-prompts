@@ -27,22 +27,22 @@ const Feed = () => {
 
 
 
-  const handleSearchChange = (e) => {
+  const handleSearchChange = (e,tag) => {
     setSearchText(e.target.value);
     handleSearchResults();
   }
 
-  const handleSearchResults = () => {
+  const handleSearchResults = (searchText) => {
     const results = posts.filter((post) =>
       post.tag.includes(searchText) || post.prompt.includes(searchText) || post.creator.username.includes(searchText)
     );
-
     setSearchResults(results);
   }
 
 
   const handleTagClick = (tag) => {
     setSearchText(tag);
+    handleSearchResults(tag);
   }
 
   useEffect(() => {
