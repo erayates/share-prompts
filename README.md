@@ -12,6 +12,12 @@ You can test live demo:
 https://share-prompts-app.vercel.app/
 
 
+## Additional Implementations To The Project
+* Implementing Search
+* Implemeting Click on Tag
+* Implement View Other Profiles
+
+
 ## Notes
 ### Benefits of Next.js
 * Next.js simplifies the development process.
