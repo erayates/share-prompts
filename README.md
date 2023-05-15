@@ -1,3 +1,35 @@
+
+# Share Prompt
+
+Share Prompt is an open-source AI prompting tool for modern world to
+discover, create and share creative prompts.
+
+( This project is a clone project to learn Next.js clearly. Thanks for 
+JavaScript Mastery for this project. )
+
+## Demo
+You can test live demo:
+https://share-prompts-app.vercel.app/
+
+
+## Notes
+### Benefits of Next.js
+* Next.js simplifies the development process.
+* On top of that it optimizes your web apps.
+
+Primary distinction between React.js and Next.js is rendering.
+* React renders UI (User Interface) on the Client Side while Next.js performs Server Side Rendering (SSR).
+
+However, Next.js offers flexibility in rendering options. You can choose the render the UI on the Client Side or Server Side according to your needs.
+
+
+### Client Side Rendering (CSR)
+CSR happens on the client's device or the browser. When a user request to a web page, the server sends a basic HTML document and Javascript code. The browser then downloads and executes the Javascript code which leads to the rendering of components and finally display of the Website.
+
+### Server Side Rendering (SSR)
+SSR involves rendering the web pages on the server before transmitting it to the client's device. When a user request to a web page, the server processes the req. and renders the components on the server side. The server then sends back the fully rendered HTML to the client's browser enabling immediate display.
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
